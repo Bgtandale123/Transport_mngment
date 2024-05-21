@@ -5,6 +5,7 @@ echo "The node name is :${env.NODE_NAME}"
 echo "The Job name is:${env.JOB_NAME}" 
 echo "The Build number is:${env.BUILD_NUMBER}"
  
+ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5'))])
 //Checkout Stage
 stage('CheckoutCode'){
 git branch: 'dev', credentialsId: '3b257769-cd49-4341-8c10-29721c76969c', url: 'https://github.com/more-tushar/transport_mngment.git'
