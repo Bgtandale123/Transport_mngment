@@ -76,6 +76,17 @@
     <version>0.11.2</version> <!-- Or the latest version -->
     <scope>runtime</scope>
 </dependency>
+<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <url>http://34.224.95.236:8081/repository/expertit-releases/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+		<url>http://34.224.95.236:8081/#browse/browse:expertit-snapshot</url>
+	    </snapshotRepository>	    
+</distributionManagement>
 
 		
 		</dependencies>
