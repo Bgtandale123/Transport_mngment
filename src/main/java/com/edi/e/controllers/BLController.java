@@ -37,7 +37,7 @@ public class BLController {
 	@Autowired
 	private BLContainerInfoService blContainerService;
 
-@GetMapping("/hlo")
+@RequestMapping("/hlo")
 public String Hello()
 	{
 	return " hiii this is my first project as a devops.";	
