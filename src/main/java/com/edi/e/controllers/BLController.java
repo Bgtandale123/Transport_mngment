@@ -37,7 +37,12 @@ public class BLController {
 	@Autowired
 	private BLContainerInfoService blContainerService;
 
-
+@GetMapping("/hlo")
+public String Hello()
+	{
+	return " hiii this is my first project as a devops.";	
+	}
+	
 	@PostMapping("/createBLDetails")
 	// @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
 	public BLDetails createBLDetails(@RequestBody BLDetails blDetails) {
