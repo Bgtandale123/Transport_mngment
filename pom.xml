@@ -48,11 +48,6 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.33</version>
 		</dependency>
-
-
-
-
- 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -60,22 +55,23 @@
 		</dependency>
 		
 		<dependency>
-    <groupId>io.jsonwebtoken</groupId>
-    <artifactId>jjwt-api</artifactId>
-    <version>0.11.2</version> <!-- Or the latest version -->
-</dependency>
-<dependency>
-    <groupId>io.jsonwebtoken</groupId>
-    <artifactId>jjwt-impl</artifactId>
-    <version>0.11.2</version> <!-- Or the latest version -->
-    <scope>runtime</scope>
-</dependency>
-<dependency>
-    <groupId>io.jsonwebtoken</groupId>
-    <artifactId>jjwt-jackson</artifactId>
-    <version>0.11.2</version> <!-- Or the latest version -->
-    <scope>runtime</scope>
-</dependency>
+		    <groupId>io.jsonwebtoken</groupId>
+		    <artifactId>jjwt-api</artifactId>
+		    <version>0.11.2</version> <!-- Or the latest version -->
+		</dependency>
+		<dependency>
+		    <groupId>io.jsonwebtoken</groupId>
+		    <artifactId>jjwt-impl</artifactId>
+		    <version>0.11.2</version> <!-- Or the latest version -->
+		    <scope>runtime</scope>
+		</dependency>
+		<dependency>
+		    <groupId>io.jsonwebtoken</groupId>
+		    <artifactId>jjwt-jackson</artifactId>
+		    <version>0.11.2</version> <!-- Or the latest version -->
+		    <scope>runtime</scope>
+		</dependency>	
+	</dependencies>
 <distributionManagement>
 	    <repository>
 	      <id>nexus</id>
@@ -87,10 +83,6 @@
 		<url>http://34.224.95.236:8081/#browse/browse:expertit-snapshot</url>
 	    </snapshotRepository>	    
 </distributionManagement>
-
-		
-		</dependencies>
-
 	<build>
 		<finalName>ExpertIt_edi</finalName>
 		<plugins>
