@@ -37,7 +37,11 @@ public class BLController {
 	@Autowired
 	private BLContainerInfoService blContainerService;
 
-
+            @GetMapping("/health")
+          public String welcome() {
+          return "Service is running successfully!";
+                         }
+	
 	@PostMapping("/createBLDetails")
 	// @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
 	public BLDetails createBLDetails(@RequestBody BLDetails blDetails) {
